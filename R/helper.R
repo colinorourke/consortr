@@ -7,7 +7,7 @@
 #' @param expr Expression to run with the temporary working directory in effect.
 #'
 #' @return Invisible NULL
-#' @import checkmate
+#' @importFrom checkmate assertDirectoryExists
 #'
 #' @examples
 #' with_dir(tempdir(), cat("Hello world!", file=tempfile(fileext=".txt")))
